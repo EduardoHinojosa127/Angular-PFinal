@@ -69,6 +69,7 @@
             [(ngModel)]="pelicula.urlpelicula"
             required
           />
+          <input type="file" class="custom-file" (change)="onArchivoPeliculaChange($event)" />
         </div>
         <div class="form-group col-md-6">
           <label for="urlimagen">URL de la Imagen:</label>
@@ -79,6 +80,7 @@
             [(ngModel)]="pelicula.urlimagen"
             required
           />
+          <input type="file" class="custom-file" (change)="onArchivoImagenChange($event)" />
         </div>
       </div>
 

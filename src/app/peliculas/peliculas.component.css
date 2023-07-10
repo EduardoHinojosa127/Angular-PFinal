@@ -182,3 +182,23 @@ body {
 .barra-busqueda button:hover {
   background-color: #b2070f;
 }
+input[type="file"].custom-file::-webkit-file-upload-button {
+  background-color: #e50914;
+  color: white;
+}
+
+input[type="file"].custom-file::-moz-file-upload-button {
+  background-color: #e50914;
+  color: white;
+}
+
+
+input[type="file"].custom-file:hover::-webkit-file-upload-button,
+input[type="file"].custom-file:hover::-moz-file-upload-button {
+  background-color: #b50a12;
+}
+
+input[type="file"].custom-file:active::-webkit-file-upload-button,
+input[type="file"].custom-file:active::-moz-file-upload-button {
+  background-color: #94090e;
+}

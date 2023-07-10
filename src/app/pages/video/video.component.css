@@ -1,7 +1,19 @@
-html, body {
+.container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción 16:9 (dividir la altura por el ancho y multiplicar por 100) */
+  position: relative;
+}
+
+.video-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .full-video {
@@ -10,12 +22,6 @@ html, body {
   object-fit: cover;
 }
 
-.black-space {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 18.2%; /* Ajusta el valor según el espacio deseado */
+body{
   background-color: black;
 }
-
